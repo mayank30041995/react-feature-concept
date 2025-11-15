@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
+import App1 from './App1'
+import App2 from './App2'
 
 function NotFoundPage() {
   return <h1>404 - Page Not Found</h1>
@@ -14,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: '*',
     element: <NotFoundPage />,
+  },
+  {
+    path: '/home',
+    element: <App2 />,
   },
   {
     path: '/',
@@ -35,6 +41,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
+    {/* <App1 /> */}
+
     <RouterProvider router={router} />
   </React.StrictMode>
 )

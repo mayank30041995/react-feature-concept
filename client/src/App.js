@@ -11,6 +11,7 @@ import RefComponent from './components/RefComponent'
 import InfiniteList from './components/InfiniteList'
 import Dashboard from './components/Dashboard'
 import RefComponent2 from './components/RefComponent2'
+import LazyInitialState from './concept/LazyInitialState/index'
 
 function App() {
   const navigate = useNavigate()
@@ -65,13 +66,16 @@ function App() {
 
   return (
     <div className="App">
-      <h1>App </h1>
+      <h1>LazyInitialState </h1>
       <header className="App-header">
-        <SimplePaper>{renderSwitch(pathname)}</SimplePaper>
+        {/* <SimplePaper>{renderSwitch(pathname)}</SimplePaper> */}
         {/* <RefComponent /> */}
-        <RefComponent2 />
+        {/* <RefComponent2 /> */}
         {/* <InfiniteList /> */}
         {/* <Dashboard /> */}
+
+        {/* Lazy Initial State / Lazy Initialization */}
+        <LazyInitialState />
       </header>
     </div>
   )

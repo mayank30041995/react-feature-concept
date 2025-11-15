@@ -12,6 +12,7 @@ import InfiniteList from './components/InfiniteList'
 import Dashboard from './components/Dashboard'
 import RefComponent2 from './components/RefComponent2'
 import LazyInitialState from './concept/LazyInitialState/index'
+import BatchingFunctionalUpdates from './concept/BatchingFunctionalUpdates/index'
 
 function App() {
   const navigate = useNavigate()
@@ -75,7 +76,9 @@ function App() {
         {/* <Dashboard /> */}
 
         {/* Lazy Initial State / Lazy Initialization */}
-        <LazyInitialState />
+        {/* <LazyInitialState /> */}
+        {/* Batching with functional updates */}
+        <BatchingFunctionalUpdates />
       </header>
     </div>
   )

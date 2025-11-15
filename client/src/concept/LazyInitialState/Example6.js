@@ -62,3 +62,30 @@ export default function Example6() {
     </div>
   )
 }
+
+{
+  /*  
+⭐ 2. Lazy form defaults using useReducer (multi-field form)
+
+We often load form defaults from:
+
+localStorage
+
+API
+
+heavy calculation
+
+Lazy initialization is perfect here.
+
+
+✔️ Why this is lazy?
+
+Form defaults are loaded only once
+
+Avoids reading localStorage on every render
+
+Perfect for large forms
+
+
+ */
+}

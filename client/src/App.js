@@ -65,6 +65,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>App </h1>
       <header className="App-header">
         <SimplePaper>{renderSwitch(pathname)}</SimplePaper>
         {/* <RefComponent /> */}
